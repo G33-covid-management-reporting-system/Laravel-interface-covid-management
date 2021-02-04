@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://127.0.0.1:8000/register -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="5lQnvtviPqmh7ELdG3paJanyCC2A7WtTmhRi3eg9">
+
+    <title>Laravel</title>
+
+    <!-- Scripts -->
+    <script src="./Laravel_files/app.js.download" defer=""></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="http://fonts.gstatic.com/">
+    <link href="./Laravel_files/css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="./Laravel_files/app.css" rel="stylesheet">
+</head>
+<body>
+    <style>
+        .positioning{
+            position:sticky !important;
+            top: 0;
+            z-index: 100;
+        }
+    </style>
+    <div id="app">
+
+        <div class="positioning">
+            <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm ">
+                <div class="box">
+                    <a class="navbar-brand" href="http://127.0.0.1:8000/">
+                        Laravel
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <!-- Left Side Of Navbar -->
+                        <ul class="navbar-nav mr-auto">
+    
+                        </ul>
+    
+                        <!-- Right Side Of Navbar -->
+                        <ul class="navbar-nav ml-auto">
+                            <!-- Authentication Links -->
+                                                                                                <li class="nav-item">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/login">Login</a>
+                                    </li>
+                                                                
+                                                                    <li class="nav-item">
+                                        <a class="nav-link" href="http://127.0.0.1:8000/register">Register</a>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+            </nav>
+    
+
+        </div>
+        
+        <main>
+            <div class="box">
+    <style>
+        .card-header{
+            background:#1c478e !important;
+            color:#ffff;
+            font-weight: 800 !important;
+         
+        }
+        .col-md-6.offset-md-4{
+            display: flex !important;
+            flex-direction: column !important;
+            flex:1 !important;
+        }
+        button.btn.btn-primary{
+            background:#1c478e !important;
+            color: #fff !important;
+        }
+        
+        .register{
+            display: flex !important;
+            flex-wrap: wrap;
+        }
+        .image{
+            object-fit: contain;
+            width: 60%;
+            height: auto;
+            flex: 0.1;
+        }
+        .register__form{
+            flex: 0.9 !important;
+            width: 100% !important;
+            height: 100vh;
+        }
+        @media(max-width:965px){
+            .register{
+                display: flex !important;
+                flex-direction: column !important;
+            }
+            .register__form, .image{
+                flex:1 !important;
+                object-fit:contain !important;
+                width:100%  !important;
+
+            }
+            .register__form{
+                z-index: 10;
+            }
+            .image{
+                margin-bottom: -250px;
+                z-index: 1;
+            }
+        }
+    </style>
+    <div class="register">
+            <img src="./Laravel_files/virus.jpg" alt="not found" class="image ">
+    
+        <div class="register__form ">
+            <div>
+                <div class="card">
+                    <div class="card-header text-center ">Register</div>
+    
+                    <div class="card-body">
+                        <form method="POST" action="http://127.0.0.1:8000/register">
+                            <input type="hidden" name="_token" value="5lQnvtviPqmh7ELdG3paJanyCC2A7WtTmhRi3eg9">    
+                            <div class="form-group row">
+                                <label for="name" class="col-md-4 col-form-label text-md-right">Name</label>
+    
+                                <div class="col-md-6">
+                                    <input id="name" type="text" class="form-control " name="name" value="" required="" autocomplete="name" autofocus="">
+    
+                                                                    </div>
+                            </div>
+    
+                            <div class="form-group row">
+                                <label for="email" class="col-md-4 col-form-label text-md-right">E-Mail Address</label>
+    
+                                <div class="col-md-6">
+                                    <input id="email" type="email" class="form-control " name="email" value="" required="" autocomplete="email">
+    
+                                                                    </div>
+                            </div>
+        
+                            <div class="form-group row">
+                                <label for="role" class="col-md-4 col-form-label text-md-right">SelectRole</label>
+                      
+                                <div class="col-md-6">
+                                    <select name="role" id="" class="form-control">
+                                        <option value="Administrator">Admin</option>
+                                        <option value="Director">Director</option>
+                                    </select>
+                                    
+                                    
+                                </div>
+                            </div>
+                    
+                            <div class="form-group row">
+                                <label for="password" class="col-md-4 col-form-label text-md-right">Password</label>
+    
+                                <div class="col-md-6">
+                                    <input id="password" type="password" class="form-control " name="password" required="" autocomplete="new-password">
+    
+                                                                    </div>
+                            </div>
+                           
+                            <div class="form-group row">
+                                <label for="password-confirm" class="col-md-4 col-form-label text-md-right">Confirm Password</label>
+    
+                                <div class="col-md-6">
+                                    <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required="" autocomplete="new-password">
+                                </div>
+                            </div>
+    
+                            <div class="form-group row mb-0 ">
+                                <div class="col-md-6 offset-md-4">
+                                    <button type="submit" class="btn btn-primary ">
+                                        Register
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    
+
+    </div>
+            </div></main>
+    </div>
+
+
+</body></html>
