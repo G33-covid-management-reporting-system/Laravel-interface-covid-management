@@ -5,7 +5,7 @@
         text-align: center;
         background: #1c478e;
         color:#fff;
-        border-radius: 999px;
+        border-radius:1000px;
         width: 100%;
         padding: 8px;
         font-weight: 800;
@@ -14,7 +14,7 @@
         text-align: center;
         background:black;
         color:#fff;
-        border-radius: 999px;
+        border-radius: 1000px;
         width: 100%;
         padding: 10px;
         height: fit-content;
@@ -45,9 +45,9 @@
         <table class="table table-striped table-dark ">
             <thead>
               <tr>
-                <th scope="col">OfficerName</th>
-                <th scope="col">OfficerHospital</th>
-                <th scope="col">TotalPatients</th>
+                <th scope="col">Officer Name</th>
+                <th scope="col">Officer Hospital</th>
+                <th scope="col">Total Patients</th>
               </tr>
             </thead>
             <tbody>
@@ -73,9 +73,9 @@
         <table class="table table-striped table-dark ">
             <thead>
               <tr>
-                <th scope="col">OfficerName</th>
-                <th scope="col">OfficerHospital</th>
-                <th scope="col">TotalPatients</th>
+                <th scope="col">Officer Name</th>
+                <th scope="col">Officer Hospital</th>
+                <th scope="col">Total Patients</th>
               </tr>
             </thead>
             <tbody>
