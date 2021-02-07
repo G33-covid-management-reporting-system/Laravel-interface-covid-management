@@ -10,7 +10,7 @@
         text-align: center;
         background: #1c478e;
         color:#fff;
-        border-radius: 999px;
+        border-radius: 1000px;
         width: 100%;
         padding: 8px;
         font-weight: 800;
@@ -19,7 +19,7 @@
         text-align: center;
         background:black;
         color:#fff;
-        border-radius: 999px;
+        border-radius: 1000px;
         width: 100%;
         padding: 10px;
         height: fit-content;
@@ -38,7 +38,7 @@
         font-weight: bold;
     }
     table.table.table-striped.table-dark:hover{
-        cursor: pointer !important;
+        cursor: pointer;
     }
     small{
         font-weight: bold;
@@ -53,21 +53,21 @@
     }
     }
     span.invalid-feedback{
-        text-align: center !important;
+        text-align: center;
     }
     .invalid{
-        color:#e3342f !important;
+        color:#e3342f;
     }
     .form-group{
-        display: flex !important;
+        display: flex;
         flex-direction: column ;
         flex: 1;
     }
     button.btn.btn-primary{
         flex: 1 !important;
-        background: #1c478e !important;
-        margin-left: 10px !important;
-        margin-right: 8px !important;
+        background: #1c478e ;
+        margin-left: 10px;
+        margin-right: 8px;
     }
     .label{
       text-align: center;
@@ -103,7 +103,7 @@
             
             @error('role')
                 <span class="invalid-feedback" role="alert">
-                    <strong>{{ $message }}</strong>
+                    <b>{{ $message }}</b>
                 </span>
             @enderror
 
@@ -150,7 +150,7 @@
             
             @else
             <div class="mt-5">
-                <h2>There was no payements this month</h2>
+                <h2>There was no payements this month yet</h2>
             </div>
             @endif
 
@@ -209,7 +209,7 @@
               </table>
             @else
             <div class="mt-5">
-                <h2>There was no payements made for  officers in Referal Hospitals this month</h2>
+                <h2>There was no payements made for officers in Referal Hospitals this month</h2>
             </div>
             @endif
 
@@ -249,8 +249,8 @@
             
         </div>
         <div class="footer">
-            <small>2021 All Rights Reserved</small>
-            <a href="{{ route('home') }}">BackHome</a>
+            <small>2021 All Rights Reserved &copy;</small>
+            <a href="{{ route('home') }}">BackToHome</a>
         </div>
     </div>
 </div>
