@@ -249,7 +249,7 @@
             
         </div>
         <div class="footer">
-            <small>2021 All Rights Reserved &copy;</small>
+           <b>&copy;</b> &nbsp <small>2021 All Rights Reserved</small> 
             <a href="{{ route('home') }}">BackToHome</a>
         </div>
     </div>
